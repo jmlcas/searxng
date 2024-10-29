@@ -32,7 +32,7 @@ services:
     volumes:
       - ./searxng:/etc/searxng:rw
     environment:
-      - SEARXNG_BASE_URL=http://192.168.1.90:8080/ # cambia por tu dominio o IP
+      - SEARXNG_BASE_URL=http://192.168.1.90:8280/ # cambia por tu dominio o IP
       - UWSGI_WORKERS=4
       - UWSGI_THREADS=4 
     cap_drop:
