@@ -1,4 +1,4 @@
 # SearXNG
 
-Ver en "localhost:8181"
+Ver en "localhost:8280"
 
