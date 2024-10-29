@@ -28,13 +28,13 @@ services:
     networks:
       - searxng
     ports:
-      - "8181:8080" #cambia 8181 si es necesario, pero no 8080
+      - "8280:8080"
     volumes:
       - ./searxng:/etc/searxng:rw
     environment:
-      - SEARXNG_BASE_URL=http://tu.docker.server.ip:8080/ #Cambia "tu.docker.server.ip" por tu dominio o IP
-      - UWSGI_WORKERS=4 #Puedes cambiar esto
-      - UWSGI_THREADS=4 #Puedes cambiar esto
+      - SEARXNG_BASE_URL=http://192.168.1.90:8080/ # cambia por tu dominio o IP
+      - UWSGI_WORKERS=4
+      - UWSGI_THREADS=4 
     cap_drop:
       - ALL
     cap_add:
